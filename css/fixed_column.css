@@ -1,0 +1,9 @@
+.col-md-3 {
+    position: fixed !important;
+    height: 570px;
+    overflow-y: auto;
+    right: 10px;
+    top: 50px;
+    opacity: 1;
+    background: beige;
+}
