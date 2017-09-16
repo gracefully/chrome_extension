@@ -108,7 +108,11 @@ var it = setInterval(function () {
     log(date)
     var times = parseInt(localStorage[date+"_times"]);
     log(times)
-    if(parseInt(times)>=3 && day == 5){
+    //周五才发
+    if(day != 5) {
+        return false;
+    }
+    if(parseInt(times)>29){
         return false;
     }
     localStorage[date+"_times"] = parseInt(times) + 1;
